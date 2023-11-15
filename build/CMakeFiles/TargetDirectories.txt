@@ -1,3 +1,0 @@
-/home/skarr/Desktop/Data Systems/Phase 3/phase-3-team-18/build/CMakeFiles/BPTree.dir
-/home/skarr/Desktop/Data Systems/Phase 3/phase-3-team-18/build/CMakeFiles/edit_cache.dir
-/home/skarr/Desktop/Data Systems/Phase 3/phase-3-team-18/build/CMakeFiles/rebuild_cache.dir
