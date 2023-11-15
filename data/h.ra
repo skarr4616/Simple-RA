@@ -1,9 +1,0 @@
-LOAD Student
-LOAD Marks
-hR1 <- SELECT Advisor_id == 2 FROM Student
-hR2 <- SELECT Maths_marks > 90 FROM Marks
-hR3 <- CROSS hR1 hR2
-hR4 <- SELECT hR1_Stud_Id == hR2_Stud_Id FROM hR3
-hR5 <- PROJECT hR1_Stud_Id FROM hR4
-RENAME hR1_Stud_Id TO stud_id FROM hR5
-PRINT hR5

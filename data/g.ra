@@ -1,9 +1,0 @@
-LOAD Student
-LOAD Advisor
-gR1 <- SELECT Adv_age > 40 FROM Advisor
-gR2 <- CROSS Student gR1
-gR3 <- SELECT Advisor_id == Adv_Id FROM gR2
-gR4 <- PROJECT Stud_Id, Adv_Id FROM gR3
-RENAME Stud_Id TO stud_id FROM gR4
-RENAME Adv_Id TO adv_id FROM gR4
-PRINT gR4

@@ -1,7 +1,0 @@
-LOAD Advisor
-fR1 <- SELECT Yrs_of_exp <= 4 FROM Advisor
-fR2 <- SELECT Salary > 300000 FROM fR1
-fR3 <- PROJECT Adv_Id, Yrs_of_exp FROM fR2
-RENAME Adv_Id TO adv_id FROM fR3
-RENAME Yrs_of_exp TO yrs_of_exp FROM fR3
-PRINT fR3
