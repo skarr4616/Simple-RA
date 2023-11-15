@@ -1,0 +1,197 @@
+BufferManager::BufferManager
+ParseQuery::clear
+
+Reading New Command: 
+SOURCE temp
+doCommand
+syntacticParse
+syntacticParseSOURCE
+semanticParse
+semanticParseSOURCE
+executeSOURCE
+ParseQuery::clear
+
+Reading New Command from Source File: 
+LOAD EMPLOYEE
+doSourceCommand
+syntacticParse
+syntacticParseLOAD
+semanticParse
+semanticParseLOAD
+TableCatalogue::isTable
+executeLOAD
+Table::Table
+Table::load
+Table::extractColumnNames
+Table::blockify
+BufferManager::writePage
+Page::Page
+Page::writePage
+TableCatalogue::~insertTable
+ParseQuery::clear
+
+Reading New Command from Source File: 
+T1 <- GROUP BY Dno FROM EMPLOYEE HAVING AVG(Salary) > 10000 RETURN MIN(Salary)
+doSourceCommand
+syntacticParse
+syntacticParseGROUPBY
+semanticParse
+semanticParseGROUPBY
+TableCatalogue::isTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+TableCatalogue::getTable
+Table::isColumn
+TableCatalogue::getTable
+Table::isColumn
+executeGROUPBY
+TableCatalogue::getTable
+Table::Table
+Table::printRow
+Table::printRow
+Table::sortTable
+Table::getColumnIndex <vector>
+Table::sortingPhase
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+TableCatalogue::getTable
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+BufferManager::writePage Overload for Subfile
+Page::Page Overload for Subfile
+Page::writePage
+Table::mergingPhase
+Cursor::Cursor Overload for Subfile
+BufferManager::getPage Overload for Subfile
+BufferManager::inPool
+BufferManager::insertIntoPool Overload for Subfile
+Page::Page Overload for Subfile
+TableCatalogue::getTable
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+Cursor::getSubfileNext
+Page::getRow
+BufferManager::getPagePtr
+BufferManager::inPool
+BufferManager::getPtrFromPool
+Page::reWritePage
+Page::writePage
+BufferManager::deleteFile Overload for Subfile
+BufferManager::deleteFile: Success
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::getFromPool
+Table::getColumnIndex
+Table::getColumnIndex
+Table::getColumnIndex
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+binaryOperatorParser
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+binaryOperatorParser
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+Cursor::geNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+binaryOperatorParser
+BufferManager::writePage
+Page::Page
+Page::writePage
+TableCatalogue::~insertTable
+ParseQuery::clear
+
+Reading New Command from Source File: 
+PRINT T1
+doSourceCommand
+syntacticParse
+syntacticParsePRINT
+semanticParse
+semanticParsePRINT
+TableCatalogue::isTable
+executePRINT
+TableCatalogue::getTable
+Table::print
+Table::printRow
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+TableCatalogue::getTable
+Cursor::geNext
+Page::getRow
+Table::printRow
+Cursor::geNext
+Page::getRow
+Table::printRow
+Cursor::geNext
+Page::getRow
+Table::printRow
+ParseQuery::clear
+
+Reading New Command: 
+CLEAR
+ParseQuery::clear
+
+Reading New Command: 
+QUIT
+TableCatalogue::~TableCatalogue
+Table::~unload
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+Table::isPermanent
+BufferManager::deleteFile: Success
+Table::~unload
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+Table::isPermanent

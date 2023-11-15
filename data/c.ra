@@ -1,0 +1,11 @@
+LOAD Student
+LOAD Advisor
+cR1 <- CROSS Student Advisor
+cR2 <- SELECT Advisor_id == Adv_Id FROM cR1
+cR3 <- SELECT Stud_sex != Adv_sex FROM cR2
+cR4 <- PROJECT Stud_Id, Adv_Id, Stud_sex, Adv_sex FROM cR3
+RENAME Stud_Id TO stud_id FROM cR4
+RENAME Adv_Id TO adv_id FROM cR4
+RENAME Stud_sex TO stud_sex FROM cR4
+RENAME Adv_sex TO adv_sex FROM cR4
+PRINT cR4

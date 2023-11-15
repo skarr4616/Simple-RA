@@ -1,0 +1,10 @@
+LOAD Student
+LOAD Marks
+eR1 <- SELECT Advisor_id == 1 FROM Student
+eR2 <- SELECT Stud_sex == 1 FROM eR1
+eR3 <- CROSS eR2 Marks
+eR4 <- SELECT eR2_Stud_Id == Marks_Stud_Id FROM eR3
+eR5 <- SELECT Maths_marks > 70 FROM eR4
+eR6 <- PROJECT eR2_Stud_Id, Maths_marks FROM eR5
+RENAME eR2_Stud_Id TO stud_id FROM eR6
+PRINT eR6
